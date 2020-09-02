@@ -6,8 +6,30 @@
         <title>Modular Origami - Home</title>
 
         <link rel="icon" type="image/x-icon" href="C:/Users/adity/Pictures/Saved Pictures/PaperPentakisDodecahedronNoBackground.png">
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <style>
+
+        @keyframes grow {
+          from {
+            font-size: 30px;
+          }
+          to {
+            font-size: 100px;
+          }
+        }
+
+        @keyframes pulse {
+          0% {
+            color: black;
+          }
+          50% {
+            color: darkBlue;
+          }
+          100% {
+            color: black;
+          }
+        }
 
         .button {
           padding: 8px 16px;
@@ -15,7 +37,7 @@
           display: inline-block;
           font-size: 16px;
           font-family: arial;
-          margin: 4px 2px;
+          margin: 4px 5px;
           transition-duration: 0.3s;
           color: black;
           border: 2px solid #000088;
@@ -25,6 +47,21 @@
           color: white;
         }
 
+        .title {
+          margin: 8px 8px;
+          color: black;
+        }
+        h1 {
+          animation-name: grow;
+          animation-duration: 3s;
+          animation-fill-mode: forwards;
+        }
+        h2 {
+          animation-name: pulse;
+          animation-duration: 2s;
+          animation-fill-mode: both;
+          animation-iteration-count: infinite;
+        }
         body{
           background: lightyellow;
         }
@@ -37,16 +74,9 @@
       <a href="Modular Origami How They Fit Together.html" class= "button">How they Fit Together</a>
       <a href="Modular Origami Modules.html" class= "button">Modules</a>
       <a href="Modular Origami Figures.html" class= "button">Polyhedra</a>
-
-      </br>
-      </br>
-      </br>
-      </br>
-      </br>
-      </br>
-      </br>
-      </br>
-      </br>
+        
+      <h1 class = "title">Modular Origami</h1>
+      <h2 class = "title">A Website by Aditya Kumbhare</h3>
 
     </body>
 </html>
